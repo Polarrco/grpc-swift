@@ -21,7 +21,7 @@ let package = Package(
   name: "GRPC",
   platforms: [
     // We can't use `.watchOS(.v6)` since it isn't available with `swift-tools-version:5.0`.
-    .macOS(.v10_12), .iOS(.v10), .tvOS(.v10), .watchOS("6.0")
+    .macOS(.v10_12), .iOS(.v12), .tvOS(.v10), .watchOS("6.0")
   ],
   products: [
     .library(name: "GRPC", targets: ["GRPC"]),
